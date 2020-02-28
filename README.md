@@ -1,12 +1,10 @@
 # Domeneshop.no DNS boot
-Bot for users of domeneshop.no. Keep your dns records updated with external ip for your self hosted sites and services.
-
-See the documentation at https://api.domeneshop.no/docs/ for help on how to acquire your API credentials.
+Bot for users of domeneshop.no. Keep your dns records updated with public ip for your self hosted sites and services.
 
 **Only IP will be updated by the bot; record type, ttl and hostname will remain the same**
 
 * Built upon [domeneshop.no's own python API](https://github.com/domeneshop/python-domeneshop). 
-* Relies on the external service of https://api.ipify.org
+* Using https://api.ipify.org to get the public IP
 
 # Installation
 ```
@@ -14,7 +12,10 @@ pip3 install domeneshop-bots
 ```
 
 ## Example usage
-1. Fill inn API credentials and which domains/hostnames to track
+
+See the documentation at https://api.domeneshop.no/docs/ for help on how to acquire your API credentials.
+
+1. Fill inn API credentials and domains to track
 ```json
 {
    "api":{
@@ -54,3 +55,16 @@ if __name__ == "__main__":
         bot.start()
 
 ```
+3. Set up a cron job, and you are done!
+
+## Authors
+
+* **Erik Larsen** - [Grizzlyfrog](https://grizzlyfrog.com)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Acknowledgments
+
+Thanks to [domeneshop.no](https://domenesho.no) for creating an API!!

@@ -96,7 +96,7 @@ class DNSBot:
         self.running = False
         schedule.clear()
 
-    @on_error(msg="Cant get remote IP address. Internet or https://api.ipify.org service is down.")
+    @on_error(msg="Cant get remote IP address. Internet or https://api.ipify.org service is down. Will try again at next job run.")
     def has_ip_changed(self):
         """
         Job to see if the ip has changed. Will check agains domeneshop first time the bot shcedule is running
@@ -140,3 +140,5 @@ class DNSBot:
                 }
                 self.logger.debug("Updating dns record %s", str(mod))
                 client.modify_record(domain["id"], record["id"], mod)
+            if not records_to_update:
+                self.logger.debug("No update needed for any records for this domain")
