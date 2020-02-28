@@ -11,11 +11,11 @@ Bot for users of domeneshop.no. Keep your dns records updated with public ip for
 pip3 install domeneshop-bots
 ```
 
-## Example usage
+## Usage
 
 See the documentation at https://api.domeneshop.no/docs/ for help on how to acquire your API credentials.
 
-1. Fill inn API credentials and domains to track
+### 1. Fill inn API credentials and domains to track
 ```json
 {
    "api":{
@@ -36,13 +36,13 @@ See the documentation at https://api.domeneshop.no/docs/ for help on how to acqu
   ]
 }
 ```
-### Hostname defaults
+#### Hostname defaults
 * "@" -> https://domain.com : domeneshop.no uses '@' to indicate root domain
 * "www" -> https://www.domain.com : in case you have added a 'www' dns to root domain as well
 
 * "subdomain" -> https://subdomain.domain.com : only subdomain should be specified
 
-2. Fire the bot up, example loading json from file
+### 2. Fire the bot up, example loading json from file
 ```python
 import json
 from domeneshop_bots import DNSBot
@@ -55,7 +55,9 @@ if __name__ == "__main__":
         bot.start()
 
 ```
-3. Set up a cron job, and you are done!
+### 3. Set up a cron job, and you are done!
+
+You know what to do!
 
 ## Authors
 
