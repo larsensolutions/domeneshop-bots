@@ -1,1 +1,8 @@
+__pycache__
 config_personal.json
+stuff.py
+build
+dist
+domeneshop_bots.egg-info
+build-prod.sh
+build-test.sh

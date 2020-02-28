@@ -1,5 +1,8 @@
 {
-    "currentIp": "will be autofilled",
+    "api":{
+        "token":"<your-domeneshop.no-token>",
+        "secret":"<your-domeneshop.no-secret>"
+    },
     "track": [
       {
         "domain": "yourdomainA.com",
@@ -8,9 +11,5 @@
       { "domain": "yourdomainB.com", 
         "hosts": ["@", "www"] 
       }
-    ],
-    "api":{
-        "token":"<your-domeneshop.no-token>",
-        "secret":"<your-domeneshop.no-secret>"
-    }
-  }
+    ]
+}

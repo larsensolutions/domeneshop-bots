@@ -4,8 +4,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="domeneshop-bots-pkg-grizzlyfrog", # Replace with your own username
-    version="0.0.1",
+    name="domeneshop-bots",
+    version="0.0.2",
     author="Erik Larsen",
     author_email="eriklarsen.post@gmail.com",
     description="Bot for domeneshop.no to keep your dns records updated with you ip for self hosting sites and services",
