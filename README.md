@@ -28,14 +28,18 @@ pip3 install domeneshop-bots
     },
     { "domain": "yourdomainB.com", 
       "hosts": ["@", "www"] 
+    },
+    { "domain": "yourdomainC.com", 
+      "hosts": ["@", "www", "subdomain"] 
     }
   ]
 }
 ```
-### Hostname types
-* "@" -> https://domain.com
-* "www" -> https://www.domain.com
-* "subdomain" -> https://subdomain.domain.com
+### Hostname defaults
+* "@" -> https://domain.com : domeneshop.no uses '@' to indicate root domain
+* "www" -> https://www.domain.com : in case you have added a 'www' dns to root domain as well
+
+* "subdomain" -> https://subdomain.domain.com : only subdomain should be specified
 
 2. Fire the bot up, example loading json from file
 ```python
