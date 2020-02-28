@@ -11,7 +11,7 @@ setuptools.setup(
     description="Bot for domeneshop.no to keep your dns records updated with you ip for self hosting sites and services",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/larsensolutions/domeneshop.no-bots",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
