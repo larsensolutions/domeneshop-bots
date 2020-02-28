@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="domeneshop-bots",
-    version="0.0.1",
+    version="0.0.2",
     author="Erik Larsen",
     author_email="eriklarsen.post@gmail.com",
     description="Bot for domeneshop.no to keep your dns records updated with correct ip for your self hosting sites and services",
@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/markdown",
     url="https://github.com/larsensolutions/domeneshop-bots",
     packages=setuptools.find_packages(),
+    install_requires=["requests", "jsonschema", "schedule", "domeneshop"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
