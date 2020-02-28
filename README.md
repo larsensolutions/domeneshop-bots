@@ -57,7 +57,7 @@ if __name__ == "__main__":
 ```
 ### 3. Set up a cron job, and you are done!
 
-You know what to do!
+Or not. In any case you know what to do!
 
 ## Authors
 
