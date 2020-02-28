@@ -1,0 +1,16 @@
+{
+    "currentIp": "will be autofilled",
+    "track": [
+      {
+        "domain": "yourdomainA.com",
+        "hosts": ["subdomainA", "subdomainB", "subdomainC"]
+      },
+      { "domain": "yourdomainB.com", 
+        "hosts": ["@", "www"] 
+      }
+    ],
+    "api":{
+        "token":"<your-domeneshop.no-token>",
+        "secret":"<your-domeneshop.no-secret>"
+    }
+  }
