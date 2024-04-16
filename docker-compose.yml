@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  domeneshop-bot:
+    build:
+      context: .
+    volumes:
+      - ./config_personal.json:/app/config.json

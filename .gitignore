@@ -6,3 +6,4 @@ dist
 domeneshop_bots.egg-info
 build-prod.sh
 build-test.sh
+docs
